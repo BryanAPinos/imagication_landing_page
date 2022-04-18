@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import { makeStyles, 
         Container, 
-        Toolbar, 
-        Fab, 
-        Typography,
-        Dialog,
-        DialogTitle, 
-        Tooltip,
-        Grid
+        Grid, 
+        Typography, 
+        Root, 
+        Divider, 
+        Box, 
+        Card,
     } from '@material-ui/core'
 import NavBar from '../Navbar/Navbar'
 
@@ -38,28 +37,12 @@ const useStyles = makeStyles( theme => ({
 
 
 export default function Dashboard() {
-    const classes = useStyles()
-    const [anchorEl, setAnchorEl] = useState(null)
-    const [isOpen, setIsOpen] = useState(false)
-
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget)
-        setIsOpen(true)
-    }
-
-    const handleClose = () => {
-        setAnchorEl(null)
-        setIsOpen(false)
-    }
-
-
-    const open = Boolean(anchorEl)  
-    const id = open ? 'simple-popover' : undefined  
+    const classes = useStyles()  
 
         return (
-            <Container className={classes.root}>
+            <div>
                 <NavBar />
-            </Container>
+            </div>
         )
 
 }
