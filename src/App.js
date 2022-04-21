@@ -1,17 +1,25 @@
-import React from 'react'
-import { ThemeProvider } from '@material-ui/styles';
-import { CssBaseline } from '@material-ui/core';
-import theme from './theme'
-import AboutUs  from './pages/AboutUs'
+import { Switch, Route, Redirect } from 'react-router-dom';
+import Landing from 'pages/Landing';
+import Profile from 'pages/Profile';
+import Login from 'pages/Login';
+import Register from 'pages/Register';
 
+// Font Awesome Style Sheet
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-export default function App() {
+// Tailwind CSS Style Sheet
+import 'assets/styles/tailwind.css';
 
-  return (
-    <ThemeProvider theme = {theme}>
-      <CssBaseline>
-        <Dashboard />
-      </CssBaseline>
-    </ThemeProvider>
-  );
+function App() {
+    return (
+        <Switch>
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/profile" component={Profile} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
+            <Redirect from="*" to="/" />
+        </Switch>
+    );
 }
+
+export default App;

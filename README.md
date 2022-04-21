@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# [Material Tailwind Kit React](https://demos.creative-tim.com/material-tailwind-kit-react/#/?ref=readme-mtkr)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![version](https://img.shields.io/badge/version-1.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-tailwind-kit-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-tailwind-kit-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-tailwind-kit-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-tailwind-kit-react/issues?q=is%3Aissue+is%3Aclosed)
 
-## Available Scripts
+![Image](https://s3.amazonaws.com/creativetim_bucket/products/486/original/opt_mtrk_thumbnail.jpg?1622709620)
 
-In the project directory, you can run:
+Material Tailwind Kit React is a free and open-source UI Kit based on two popular front-end technologies: Tailwind CSS & React. It was built to simplify the developer's work in the quest of creating intuitive interfaces.
 
-### `yarn start`
+Material Tailwind has 4 pre-built example pages. From landing pages to profile, login and register, you will be able to set up the basic structure for your web project quickly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   [Versions](#versions)
+-   [Demo](#demo)
+-   [Quick Start](#quick-start)
+-   [Documentation](#documentation)
+-   [File Structure](#file-structure)
+-   [Browser Support](#browser-support)
+-   [Resources](#resources)
+-   [Reporting Issues](#reporting-issues)
+-   [Technical Support or Questions](#technical-support-or-questions)
+-   [Licensing](#licensing)
+-   [Useful Links](#useful-links)
 
-### `yarn test`
+## Versions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-tailwind-kit-react?ref=readme-mtkr)
+| React |
+| ----- |
 
-### `yarn build`
+| [![Material Tailwind Kit React](https://s3.amazonaws.com/creativetim_bucket/products/486/original/opt_mtrk_thumbnail.jpg?1622709620)](https://demos.creative-tim.com/material-tailwind-kit-react/#/?ref=readme-mtkr)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   [Landing page](https://demos.creative-tim.com/material-tailwind-kit-react/#/landing?ref=readme-mtkr)
+-   [Profile page](https://demos.creative-tim.com/material-tailwind-kit-react/#/profile?ref=readme-mtkr)
+-   [Login page](https://demos.creative-tim.com/material-tailwind-kit-react/#/login?ref=readme-mtkr)
+-   [Register page](https://demos.creative-tim.com/material-tailwind-kit-react/#/register?ref=readme-mtkr)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Quick start
 
-### `yarn eject`
+Quick start options:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-   Download from [Creative Tim](https://www.creative-tim.com/product/material-tailwind-kit-react?ref=readme-mtkr).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Terminal Commands
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Download and Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/download/).
+2. Navigate to the root / directory and run npm install or (yarn install, if you're using yarn) to install our local dependencies.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Documentation
 
-## Learn More
+Material Tailwind Kit React build using Material Tailwind and the documentation of Material Tailwind is hosted at [Material Tailwinl](https://material-tailwind.com/documentation/quick-start?ref=readme-mtkr).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### What's included
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Within the download you'll find the following directories and files:
 
-### Code Splitting
+```
+Material Tailwind Kit React
+    ├── material-tailwind-kit-react
+    │   ├── public
+    │   │   ├── index.html
+    │   │   ├── favicon.ico
+    │   │   └── apple-icon.png
+    │   ├── src
+    │   │   ├── assets
+    │   │   │   ├── img/
+    │   │   │   └── styles/
+    │   │   ├── components
+    │   │   │   ├── landing/
+    │   │   │   ├── login/
+    │   │   │   ├── profile/
+    │   │   │   ├── DefaultFooter.js
+    │   │   │   ├── DefaultNavbar.js
+    │   │   │   └── SimpleFooter.js
+    │   │   ├── Pages
+    │   │   │   ├── Landing.js
+    │   │   │   ├── Login.js
+    │   │   │   ├── Profile.js
+    │   │   │   └── Register.js
+    │   │   ├── App.js
+    │   │   ├── App.test.js
+    │   │   ├── index.js
+    │   │   ├── reportWebVitals.js
+    │   │   └── setup.test.js
+    │   ├── CHANGELOG.md
+    │   ├── jsconfig.json
+    │   ├── LICENSE
+    │   ├── package.json
+    │   ├── postcss.config.js
+    │   ├── README.md
+    │   ├── tailwind.config.js
+    │   ├── yarn.lock
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Browser Support
 
-### Analyzing the Bundle Size
+At present, we officially aim to support the last two versions of the following browsers:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
-### Making a Progressive Web App
+## Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-   [Live Preview](https://demos.creative-tim.com/material-tailwind-kit-react/#/?ref=readme-mtkr)
+-   [Download Page](https://www.creative-tim.com/product/material-tailwind-kit-react?ref=readme-mtkr)
+-   Documentation is [here](https://material-tailwind.com/documentation/quick-start?ref=readme-mtkr)
+-   [License Agreement](https://www.creative-tim.com/license?ref=readme-mtkr)
+-   [Support](https://www.creative-tim.com/contact-us?ref=readme-mtkr)
+-   Issues: [Github Issues Page](https://github.com/creativetimofficial/material-tailwind-kit-react/issues)
 
-### Advanced Configuration
+## Reporting Issues
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+We use GitHub Issues as the official bug tracker for the Material Tailwind Kit React. Here are some advices for our users that want to report an issue:
 
-### Deployment
+1. Make sure that you are using the latest version of the Material Tailwind Kit React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-tailwind-kit-react?ref=readme-mtkr).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Technical Support or Questions
 
-### `yarn build` fails to minify
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-mtkr) instead of opening an issue.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licensing
+
+-   Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-mtkr)
+-   Creative Tim [license](https://www.creative-tim.com/license?ref=readme-mtkr)
+
+## Useful Links
+
+-   [More products](https://www.creative-tim.com/templates?ref=readme-mtkr) from Creative Tim
+
+-   [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+
+-   [Freebies](https://www.creative-tim.com/templates/free?ref=readme-mtkr) from Creative Tim
+
+-   [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-mtkr) (earn money)
+
+##### Social Media
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>
