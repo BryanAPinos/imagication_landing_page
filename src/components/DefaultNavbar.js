@@ -8,16 +8,13 @@ import NavbarToggler from '@material-tailwind/react/NavbarToggler';
 import NavbarCollapse from '@material-tailwind/react/NavbarCollapse';
 import Nav from '@material-tailwind/react/Nav';
 import NavLink from '@material-tailwind/react/NavLink';
-import Dropdown from '@material-tailwind/react/Dropdown';
-import DropdownItem from '@material-tailwind/react/DropdownItem';
-import Icon from '@material-tailwind/react/Icon';
 import Button from '@material-tailwind/react/Button';
 
 export default function DefaultNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
 
     return (
-        <Navbar navbar>
+        <Navbar color="white" navbar>
             <NavbarContainer>
                 <NavbarWrapper>
                     <a
@@ -25,7 +22,13 @@ export default function DefaultNavbar() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <NavbarBrand>Imagication</NavbarBrand>
+                        <NavbarBrand
+                            text-transform='normal-case'
+                        >
+                            <p class='text-black normal-case'>
+                                Imagication
+                            </p>
+                        </NavbarBrand>
                     </a>
                     <NavbarToggler
                         onClick={() => setOpenNavbar(!openNavbar)}
@@ -42,7 +45,9 @@ export default function DefaultNavbar() {
                                 rel="noreferrer"
                                 ripple="light"
                             >
-                                &nbsp;Home
+                               <p class="text-black normal-case">
+                                   Home
+                                </p>
                             </NavLink>
                             <NavLink
                                 href="https://imagication.co/ourstory"
@@ -50,7 +55,9 @@ export default function DefaultNavbar() {
                                 rel="noreferrer"
                                 ripple="light"
                             >
-                                &nbsp;Our Story
+                                <p class="text-black normal-case">
+                                    Our Story
+                                </p>
                             </NavLink>
                             <NavLink
                                 href="https:/imagication.so/forschools"
@@ -58,9 +65,18 @@ export default function DefaultNavbar() {
                                 rel="noreferrer"
                                 ripple="light"
                             >
-                                For Schools
+                                <p class="text-black normal-case">
+                                    For Schools
+                                </p>
                             </NavLink>
                         </div>
+                        <Button
+                            color='deepPurple'
+                        >
+                            <p class="normal-case">
+                                Explore
+                            </p>
+                        </Button>
                     </Nav>
                 </NavbarCollapse>
             </NavbarContainer>

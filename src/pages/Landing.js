@@ -3,7 +3,8 @@ import DefaultFooter from 'components/DefaultFooter';
 import Header from 'components/landing/Header';
 import ControlSection from 'components/landing/ControlSection';
 import IntroSection from 'components/landing/IntroSection';
-import ContactSection from 'components/landing/ContactSection';
+import ExploreSection from 'components/landing/ExploreSection';
+
 
 export default function Landing() {
     return (
@@ -12,7 +13,7 @@ export default function Landing() {
                 <DefaultNavbar />
             </div>
             <main>
-                <Header />
+                <ExploreSection />
                 <IntroSection />
                 <ControlSection />
             </main>
