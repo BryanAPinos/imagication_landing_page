@@ -18,7 +18,7 @@ module.exports = {
                     "linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url('/src/assets/img/background-1920x1080.jpg')",
             }),
             colors: {
-                'purple': '#3D325F'
+                'violet': '#3D325F'
             }
         },
     },

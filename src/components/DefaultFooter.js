@@ -8,7 +8,6 @@ export default function DefaultFooter() {
         <>
             <footer 
                 className="bg-relative pt-8 pb-6"
-                color='purple'
             >
                 <div className="container max-w-7xl mx-auto px-4">
                     <div className="flex flex-wrap text-center lg:text-left pt-6">
