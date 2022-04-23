@@ -1,9 +1,8 @@
 import DefaultNavbar from 'components/DefaultNavbar';
 import DefaultFooter from 'components/DefaultFooter';
-import Header from 'components/profile/Header';
-import Content from 'components/profile/Content';
+import Header from 'components/ourstory/Header';
 
-export default function Profile() {
+export default function ForSchools() {
     return (
         <>
             <div className="absolute w-full z-20">
@@ -11,7 +10,6 @@ export default function Profile() {
             </div>
             <main>
                 <Header />
-                <Content />
             </main>
             <DefaultFooter />
         </>
