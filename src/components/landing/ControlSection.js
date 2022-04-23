@@ -1,6 +1,4 @@
-import Icon from '@material-tailwind/react/Icon';
 import H4 from '@material-tailwind/react/Heading4';
-import H6 from '@material-tailwind/react/Heading6';
 import LeadText from '@material-tailwind/react/LeadText';
 import Image from '@material-tailwind/react/Image';
 import Control from 'assets/img/control.jpg';
