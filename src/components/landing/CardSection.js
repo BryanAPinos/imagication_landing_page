@@ -1,5 +1,5 @@
 import Card from '@material-tailwind/react/Card'
-import CardBody from '@material-tailwind/react/CardBody'y
+import CardBody from '@material-tailwind/react/CardBody'
 import H5 from "@material-tailwind/react/Heading5";
 import H6 from "@material-tailwind/react/Heading6"
 import Input from "@material-tailwind/react/Input";
