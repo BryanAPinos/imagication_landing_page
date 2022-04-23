@@ -41,18 +41,19 @@ export default function DefaultNavbar() {
                         <div className="flex flex-col z-50 lg:flex-row lg:items-center">
                             <NavLink
                                 href="https://imagication.co"
-                                target="_blank"
+                                // target="_blank"
                                 rel="noreferrer"
                                 ripple="light"
                             >
-                               <p class="text-black normal-case">
-                                   Home
+                                <p class="text-black normal-case">
+                                    Home
                                 </p>
                             </NavLink>
                             <NavLink
                                 href="https://imagication.co/ourstory"
-                                target="_blank"
-                                rel="noreferrer"
+                                to="/ourstory"
+                                // target="_blank"
+                                // rel="noreferrer"
                                 ripple="light"
                             >
                                 <p class="text-black normal-case">
@@ -60,9 +61,7 @@ export default function DefaultNavbar() {
                                 </p>
                             </NavLink>
                             <NavLink
-                                href="https:/imagication.so/forschools"
-                                target="_blank"
-                                rel="noreferrer"
+                                to="/forschools"
                                 ripple="light"
                             >
                                 <p class="text-black normal-case">
