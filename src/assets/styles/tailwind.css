@@ -617,6 +617,10 @@ video {
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
+.py-0{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 .pt-8{
 	padding-top: 2rem;
 }
@@ -628,6 +632,9 @@ video {
 }
 .pb-20{
 	padding-bottom: 5rem;
+}
+.pb-10{
+	padding-bottom: 2.5rem;
 }
 .text-center{
 	text-align: center;

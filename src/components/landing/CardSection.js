@@ -13,21 +13,25 @@ import Button from "@material-tailwind/react/Button";
 export default function CardSection() {
     return (
         <div className="relative flex content-center items-center justify-center h-screen">
-            <Card>
-                <CardBody>
-                    <H5>You have to see it to believe it!</H5>
-                    <H6> Request a demo for Imagication! </H6>
-                    <p>
-                        Email: 
-                    </p>
-                    <Input />
-                    <Button
-                        color='purple'
-                    >
-                        Explore
-                    </Button>
-                </CardBody>
-            </Card>
+            <div className="">
+                <Card>
+                    <CardBody>
+                        <H5>You have to see it to believe it!</H5>
+                        <H6> Request a demo for Imagication! </H6>
+                        <Input 
+                            type="text"
+                            size="regular"
+                            outline={false}
+                            placeholder="Enter Email:"
+                        />
+                        <Button
+                            color='purple'
+                        >
+                            Explore
+                        </Button>
+                    </CardBody>
+                </Card>
+            </div>
         </div>
     )
 }
