@@ -1,8 +1,8 @@
 {
-  "name": "material-tailwind-kit-react",
+  "name": "imagiation-landing-page",
   "version": "1.1.0",
   "private": true,
-  "homepage": "https://demos.creative-tim.com/material-tailwind-kit-react/#/",
+  "homepage": "https://imagication.co",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@material-tailwind/react": "^0.3.4",
