@@ -494,11 +494,11 @@ video {
 		max-width: 1536px;
 	}
 }
-.relative{
-	position: relative;
-}
 .absolute{
 	position: absolute;
+}
+.relative{
+	position: relative;
 }
 .z-50{
 	z-index: 50;
@@ -597,10 +597,6 @@ video {
 .bg-indigo-500{
 	--tw-bg-opacity: 1;
 	background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
-}
-.bg-purple-500{
-	--tw-bg-opacity: 1;
-	background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
 }
 .bg-pink-500{
 	--tw-bg-opacity: 1;

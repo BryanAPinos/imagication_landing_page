@@ -71,7 +71,7 @@ export default function DefaultNavbar() {
                             </NavLink>
                         </div>
                         <Button
-                            color='deepPurple'
+                            color='purple'
                         >
                             <p class="normal-case">
                                 Explore

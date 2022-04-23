@@ -16,7 +16,7 @@ export default function Header() {
                         <LeadText color="blueGray">
                         Transform your campus tours and invite students from all over the world
                         </LeadText>
-                        <Button>
+                        <Button color='purple'>
                             Contact Us
                         </Button>
                     </div>                  
