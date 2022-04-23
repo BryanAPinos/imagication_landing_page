@@ -62,6 +62,7 @@ export default function DefaultNavbar() {
                             </NavLink>
                             <NavLink
                                 to="/forschools"
+                                href="https://imagication.co/forschools"
                                 ripple="light"
                             >
                                 <p class="text-black normal-case">
