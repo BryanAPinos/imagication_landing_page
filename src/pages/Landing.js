@@ -3,7 +3,7 @@ import DefaultFooter from 'components/DefaultFooter';
 import ControlSection from 'components/landing/ControlSection';
 import IntroSection from 'components/landing/IntroSection';
 import ExploreSection from 'components/landing/ExploreSection';
-import CardSection from 'components/landing/CardSection';
+import EmailForm from 'components/landing/EmailForm';
 
 export default function Landing() {
     return (
@@ -18,7 +18,7 @@ export default function Landing() {
                 <hr className="my-6 border-black-300" />
                 <ControlSection />
                 <hr className="my-6 border-black-300" />
-                <CardSection />
+                <EmailForm />
             </main>
             <DefaultFooter />
         </>
