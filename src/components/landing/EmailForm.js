@@ -1,8 +1,5 @@
 import React from 'react'
-import Card from '@material-tailwind/react/Card'
-import CardBody from '@material-tailwind/react/CardBody'
-import Input from "@material-tailwind/react/Input";
-import { Typography, Button } from '@mui/material'
+import { Box, Paper, Card, CardContent, Typography, Button, TextField, Grid } from '@mui/material'
 
 var Airtable = require('airtable')
 Airtable.configure({
@@ -12,7 +9,7 @@ Airtable.configure({
 
 var base = Airtable.base('appFXGuwbT0EsyH3W')
 
-class EmailForm extends React.Component{
+class EmailForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -20,7 +17,7 @@ class EmailForm extends React.Component{
         }
     }
 
-    render() {
+    render () {
         var email; 
         var current = new Date() 
         var cDate = current.getFullYear() + '-' + (current.getMonth() + 1) + '-' + current.getDate() 
@@ -41,29 +38,62 @@ class EmailForm extends React.Component{
         }
 
         return (
-            <div className="relative flex content-center items-center justify-center h-screen">
-                <Card className='self-center w-10/12'>
-                    <CardBody>
-                        <Typography>You have to see it to believe it! </Typography>
-                        <Typography> Request a demo for Imagication! </Typography>
-                        <Input 
-                            type="text"
-                            size="regular"
-                            outline={false}
-                            placeholder="Enter Email:"
-                            onChange={handleChangeInput}
-                        />
-                        <Button
-                            variant='contained'
-                            onClick={handleClick}
-                        >
-                            <Typography>    
-                                Explore
-                            </Typography>
-                        </Button>
-                    </CardBody>
-                </Card>
-            </div>
+            <Box sx={{
+                display: 'flex'
+            }}>
+                <Paper
+                    elevation={3}
+                >
+                    <Card>
+                        <CardContent>
+                            <Grid 
+                                container
+                                direction='column'
+                                justifyContent='space-around'
+                                alignItems='center'
+                            >
+                                <Grid item>
+                                    <Typography variant='h4'>
+                                        You have to see it to believe it!
+                                    </Typography>
+                                    <Typography variant='caption'>
+                                        Request a demo for Imagication!
+                                    </Typography>
+                                </Grid>
+
+                                <Grid item>
+                                    <Grid 
+                                        container
+                                        direction='row'
+                                        justifyContent='center'
+                                        alignItems='center'
+                                    >
+                                        <Grid item>
+                                            <Typography>
+                                                Enter Email
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item>
+                                            <TextField variant='outlined' id='email' onChange={handleChangeInput} />
+                                            
+                                        </Grid>
+                                        <Grid item>
+                                            <Button
+                                                variant='contained'
+                                                onClick={handleClick}
+                                            >
+                                                <Typography>
+                                                    Explore
+                                                </Typography>
+                                            </Button>
+                                        </Grid>
+                                    </Grid>    
+                                </Grid>
+                            </Grid>
+                        </CardContent>
+                    </Card>
+                </Paper>
+            </Box>
         )
     }
 }

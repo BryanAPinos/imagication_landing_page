@@ -6,21 +6,36 @@ import IntroSection from 'components/landing/IntroSection';
 import ExploreSection from 'components/landing/ExploreSection';
 import EmailForm from 'components/landing/EmailForm';
 import Footer from 'components/footers/Footer';
+import { Grid, Box } from '@mui/material'
 
 export default function Landing() {
     return (
         <>
-            <div className="absolute w-full z-20">
-                <ImagicationNavbar />
-            </div>
+           <Box 
+                sx={{ marginBottom: 20}}
+            >
+               <ImagicationNavbar />
+            </Box>
             <main>
-                <ExploreSection />
-                <hr className="my-6 border-black-300" />
-                <IntroSection />
-                <hr className="my-6 border-black-300" />
-                <ControlSection />
-                <hr className="my-6 border-black-300" />
-                <EmailForm />
+                <Grid 
+                    container
+                    direction='colulmn'
+                    justifyContent='space-between'
+                    alignItems='stretch'
+                >
+                    <Grid item>
+                        <ExploreSection />
+                    </Grid>
+                    <Grid item>
+                        <IntroSection />
+                    </Grid>
+                    <Grid item>
+                        <ControlSection /> 
+                    </Grid>
+                    <Grid item>
+                        <EmailForm />
+                    </Grid>
+                </Grid>
             </main>
             <Footer />
         </>
