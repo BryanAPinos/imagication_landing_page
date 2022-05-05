@@ -1,4 +1,6 @@
-import { Switch, Route, Redirect } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 import Landing from 'pages/Landing';
 import OurStory from 'pages/OurStory';
 import ForSchools from 'pages/ForSchools';
@@ -11,13 +13,13 @@ import 'assets/styles/tailwind.css';
 
 function App() {
     return (
-        <Switch>
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/ourstory" component={OurStory} />
-            <Route exact path="/forschools" component={ForSchools} />
-            <Redirect from="*" to="/" />
-
-        </Switch>
+        <BrowserRouter>
+            <Switch>
+                <Route path='/' exact render={(props) => <Landing {...props} />} />
+                <Route path='/ourstory' exact render={(props) => <OurStory {...props} />} />
+                <Route path='/forschools' exact render={(props) => <ForSchools {...props} />} />
+            </Switch>
+        </BrowserRouter>
     );
 }
 
