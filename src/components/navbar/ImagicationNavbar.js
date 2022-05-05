@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { Typography, Box, Container, Toolbar, Button, Grid,  } from '@mui/material';
 
 export default function ImagicationNavbar() {
@@ -19,11 +20,12 @@ export default function ImagicationNavbar() {
           >
           {/* Title */}
             <Grid item>
-              <Button variant='text'>
-                <Typography variant='button'>
-                  Imagication
-                </Typography>
-              </Button>
+              <Link to='/'>
+                  <Typography variant='button'>
+                    Imagication
+                  </Typography>
+              </Link>
+              
             </Grid>
 
           {/* Links to pages */}
@@ -36,27 +38,27 @@ export default function ImagicationNavbar() {
               >
 
                 <Grid item>
-                  <Button variant='text'>
+                  <Link to='/'>
                     <Typography variant='button'>
                       Home
                     </Typography>
-                  </Button>
+                  </Link>
                 </Grid>
 
                 <Grid item>
-                  <Button variant='text'>
+                  <Link to='/ourstory'>
                     <Typography variant='button'>
                       Our Story
                     </Typography>
-                  </Button>
+                  </Link>
                  </Grid>
 
                  <Grid item>
-                   <Button variant='text'>
+                   <Link to='/forschools'>
                       <Typography variant='button'>
                         For Schools
                       </Typography>
-                    </Button>
+                    </Link>
                   </Grid>
                
                </Grid>  
