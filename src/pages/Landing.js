@@ -5,7 +5,7 @@ import ControlSection from 'components/landing/ControlSection';
 import IntroSection from 'components/landing/IntroSection';
 import ExploreSection from 'components/landing/ExploreSection';
 import EmailForm from 'components/landing/EmailForm';
-import Footer from '../components/footers/Footer'
+import Footer from 'components/footers/Footer';
 
 export default function Landing() {
     return (

@@ -1,6 +1,7 @@
 import ImagicationNavbar from '../components/navbar/ImagicationNavbar'
-import Footer from '../components/footers/Footer'
 import Header from 'components/forschools/Header';
+import Footer from '../components/footers/Footer'
+
 
 export default function OurStory() {
     return (

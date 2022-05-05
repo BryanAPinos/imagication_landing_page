@@ -1,21 +1,91 @@
-import React, { useContext } from 'react'
+import React from 'react'
+import { Typography, Box, Avatar, Toolbar, AppBar, Container, Button, Grid } from '@mui/material'
+import ImagicationLogo from '../../assets/img/logo.png'
 
-import DesktopFooter from "./DesktopFooter";
-import MobileFooter from "./MobileFooter";
-import { DeviceContext } from '../../DeviceContext'; 
+// FontAwesome for social  icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
+
 
 export default function Footer() {
-    const device = useContext(DeviceContext)
+    return (
+        <Box sx={{ flexGrow: 1 }}>
+            <AppBar 
+                    position='static'
+                    color="primary" 
+                    sx={{ top: 'auto', bottom: 0 }}
+                >
+                <Container
+                    style={{
+                        paddingTop: '50px',
+                        paddingBottom: '50px'
+                    }}
+                >
+                    <Toolbar>
+                        <Grid 
+                            container
+                            direction="row"
+                            justifyContent="flex-start"
+                            alignItems="center"
+                            spacing={3}
+                        >
+                            <Grid item>
+                                <Avatar alt='Imagication' src='../../assets/img/logo.png' />
+                            </Grid>
 
-    React.useEffect(() => {
-        document.body.classList.add('landing-page')
-        window.scrollTo(0,0)
-        document.body.scrollTop = 0 
-        return function cleanup() {
-            document.body.classList.remove('landing-page')
-        }
-    })
+                            <Grid item>
+                                <Typography variant='h2'>
+                                    Imagication
+                                </Typography>
+                                <Typography variant='subtitle2'>
+                                Providing the guidance counselor you deserve
+                                </Typography>
+                            </Grid>
 
-    return <> {device === "mobile" ? <MobileFooter /> : <DesktopFooter />}</>;
+                            <Grid item>
+                                <Typography variant='h2'>
+                                    Contact
+                                </Typography>
+                                <Typography variant='subtitle2'>
+                                    info@imagication.co
+                                </Typography>
+                                <Typography variant='subtitle2'>
+                                    201-663-5412
+                                </Typography>
 
+                            </Grid>
+
+                            <Grid item>
+
+                                <Grid 
+                                    container
+                                    direction="row"
+                                    justifyContent="flex-end"
+                                    alignItems="center"
+                                    spacing={3}
+                                >
+                                    <Grid item>
+                                        <Typography variant='h3'>
+                                            <FontAwesomeIcon icon={brands('instagram')} />
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item>
+                                        <Typography variant='h3'>
+                                            <FontAwesomeIcon icon={brands('tiktok')} />
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item>
+                                        <Typography variant='h3'>
+                                            <FontAwesomeIcon icon={brands('linkedin')} />
+                                        </Typography>
+                                    </Grid>
+                                </Grid>
+
+                            </Grid>
+                        </Grid>
+                    </Toolbar>
+                </Container>
+            </AppBar>
+        </Box>
+    )
 }

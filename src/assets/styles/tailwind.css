@@ -500,6 +500,9 @@ video {
 .relative{
 	position: relative;
 }
+.fixed{
+	position: fixed;
+}
 .static{
 	position: static;
 }
@@ -537,12 +540,6 @@ video {
 }
 .mb-5{
 	margin-bottom: 1.25rem;
-}
-.ml-auto{
-	margin-left: auto;
-}
-.inline-block{
-	display: inline-block;
 }
 .flex{
 	display: flex;
@@ -627,10 +624,6 @@ video {
 .bg-red-500{
 	--tw-bg-opacity: 1;
 	background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
-}
-.bg-white{
-	--tw-bg-opacity: 1;
-	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 .p-3{
 	padding: 0.75rem;
