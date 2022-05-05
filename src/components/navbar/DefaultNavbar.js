@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Navbar from '@material-tailwind/react/Navbar';
 import NavbarContainer from '@material-tailwind/react/NavbarContainer';
 import NavbarWrapper from '@material-tailwind/react/NavbarWrapper';
@@ -8,7 +7,7 @@ import NavbarToggler from '@material-tailwind/react/NavbarToggler';
 import NavbarCollapse from '@material-tailwind/react/NavbarCollapse';
 import Nav from '@material-tailwind/react/Nav';
 import NavLink from '@material-tailwind/react/NavLink';
-import Button from '@material-tailwind/react/Button';
+import Button from '@material-ui/core'
 
 export default function DefaultNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
@@ -71,7 +70,7 @@ export default function DefaultNavbar() {
                             </NavLink>
                         </div>
                         <Button
-                            color='purple'
+                           variant='contained'
                         >
                             <p class="normal-case">
                                 Explore

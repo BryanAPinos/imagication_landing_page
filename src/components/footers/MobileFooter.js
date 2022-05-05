@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
+import footerBackgroundColor from "assets/Colors";
 
 // FontAwesome for social  icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,7 +16,7 @@ export default function MobileFooter() {
     <>
       <footer
         className="footer footer-big text-white"
-        style={{ backgroundColor: "#000000" }}
+        style={{ backgroundColor: {footerBackgroundColor} }}
       >
         <Container
           style={{

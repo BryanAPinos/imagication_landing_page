@@ -1,16 +1,18 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
+import footerBackgroundColor  from 'assets/Colors'
 
 // FontAwesome for social  icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
+
 
 export default function DesktopFooter() {
     return (
       <>
         <footer
           className="footer footer-big text-white"
-          style={{ backgroundColor: "#000000" }}
+          style={{ backgroundColor: {footerBackgroundColor} }}
         >
           <Container
             style={{
