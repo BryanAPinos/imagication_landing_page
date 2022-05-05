@@ -1,10 +1,6 @@
-import CardImage from '@material-tailwind/react/CardImage';
-import H4 from '@material-tailwind/react/Heading4';
-import H6 from '@material-tailwind/react/Heading6';
-import LeadText from '@material-tailwind/react/LeadText';
-import Teamwork from 'assets/img/teamwork.jpeg';
 import Explore from 'assets/img/explore.jpg';
 import Image from '@material-tailwind/react/Image'
+import { Typography } from '@mui/material'
 
 
 export default function ExploreSection() {
@@ -14,10 +10,12 @@ export default function ExploreSection() {
             <div className="container max-w-7xl mx-auto px-2">
                 <div className="flex flex-wrap items-center mt-16">
                     <div className="w-full md:w-5/12 px-4 mx-auto">
-                        <H4 color="gray">Explore without limitations.</H4>
-                        <LeadText color="blueGray">
-                        Explore the endless possibilities in the comfort of your own home.  
-                        </LeadText>
+                        <Typography variant='h1'>
+                            Explore without limitations.
+                        </Typography>
+                        <Typography variant='subtitle1'>
+                            Explore the endless possibilities in the comfort of your own home.  
+                        </Typography>
                     </div>                    
                     <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">
                         <Image

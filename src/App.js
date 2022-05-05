@@ -6,6 +6,9 @@ import Landing from 'pages/Landing';
 import OurStory from 'pages/OurStory';
 import ForSchools from 'pages/ForSchools';
 
+// Font assets
+import theme from './assets/theme'
+
 // Font Awesome Style Sheet
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -13,27 +16,11 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'assets/styles/tailwind.css';
 
 // Material UI Theme
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-const theme = createTheme({
-    status: {
-      danger: '#e53e3e',
-    },
-    palette: {
-      primary: {
-        main: '#0971f1',
-        darker: '#053e85',
-      },
-      neutral: {
-        main: '#64748B',
-        contrastText: '#fff',
-      },
-    },
-  });
+import { ThemeProvider } from '@mui/material/styles';
 
 function App() {
     return (
-        <ThemeProvider>
+        <ThemeProvider theme={theme}>
             <BrowserRouter>
                 <Switch>
                     <Route path='/' exact render={(props) => <Landing {...props} />} />

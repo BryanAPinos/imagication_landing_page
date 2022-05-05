@@ -1,12 +1,7 @@
-import Card from '@material-tailwind/react/Card';
-import CardImage from '@material-tailwind/react/CardImage';
-import CardBody from '@material-tailwind/react/CardBody';
-import Icon from '@material-tailwind/react/Icon';
-import H4 from '@material-tailwind/react/Heading4';
-import LeadText from '@material-tailwind/react/LeadText';
-import Teamwork from 'assets/img/teamwork.jpeg';
 import Image from '@material-tailwind/react/Image'
 import Intro from 'assets/img/introducing.jpg'
+import { Typography } from '@mui/material'
+
 
 export default function IntroSection() {
     return (
@@ -22,10 +17,12 @@ export default function IntroSection() {
                         />
                     </div>
                     <div className="w-full md:w-5/12 px-4 mx-auto">
-                        <H4 color="gray">Introducing Imagication</H4>
-                        <LeadText color="blueGray">
-                        Immerse yourself in a new reality where you can explore different college campuses. Only Imagication will allow you to talk to virtual tour guides and meet other prospective students. 
-                        </LeadText>
+                        <Typography variant='h1'>
+                            Introducing Imagication 
+                        </Typography>
+                        <Typography variant='subtitle1'>
+                            Immerse yourself in a new reality where you can explore different college campuses. Only Imagication will allow you to talk to virtual tour guides and meet other prospective students. 
+                        </Typography>
                     </div>
 
 

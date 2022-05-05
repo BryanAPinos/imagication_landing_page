@@ -1,8 +1,5 @@
-import H4 from '@material-tailwind/react/Heading4';
-import H6 from '@material-tailwind/react/Heading6';
-import LeadText from '@material-tailwind/react/LeadText';
-import Button from '@material-tailwind/react/Button';
 import Image from '@material-tailwind/react/Image';
+import { Typography, Button } from '@mui/material'
 
 export default function Header() {
     return (
@@ -11,11 +8,11 @@ export default function Header() {
             <div className="container max-w-7xl mx-auto px-2">
                 <div className="flex flex-wrap items-center mt-16">
                     <div className="w-full md:w-5/12 px-4 mx-auto">
-                        <H4 color="gray">Let's build your campus together.</H4>
-                        <LeadText color="blueGray">
+                        <Typography>Let's build your campus together.</Typography>
+                        <Typography>
                         Transform your campus tours and invite students from all over the world!
-                        </LeadText>
-                        <Button color='purple'>
+                        </Typography>
+                        <Button>
                             Contact Us
                         </Button>
                     </div>                  
