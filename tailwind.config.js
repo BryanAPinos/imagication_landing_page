@@ -4,9 +4,9 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily: {
-            sans: ['Roboto', 'sans-serif'],
-            serif: ['"Roboto Slab"', 'serif'],
-            body: ['Roboto', 'sans-serif'],
+            sans: ['Lato', 'sans-serif'],
+            serif: ['"Lato Slab"', 'serif'],
+            body: ['Lato', 'sans-serif'],
         },
         extend: {
             backgroundImage: () => ({

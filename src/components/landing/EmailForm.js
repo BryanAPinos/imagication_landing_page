@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Paper, Card, CardContent, Typography, Button, TextField, Grid } from '@mui/material'
+import { Box, Paper, Card, CardContent, Typography, Button, TextField, Grid, Container} from '@mui/material'
 
 var Airtable = require('airtable')
 Airtable.configure({
@@ -38,19 +38,18 @@ class EmailForm extends React.Component {
         }
 
         return (
-            <Box sx={{
-                display: 'flex'
-            }}>
+            <Container >
                 <Paper
                     elevation={3}
                 >
-                    <Card>
+                    <Card >
                         <CardContent>
                             <Grid 
                                 container
                                 direction='column'
-                                justifyContent='space-around'
                                 alignItems='center'
+                                justifyContent="center"
+                                
                             >
                                 <Grid item>
                                     <Typography variant='h4'>
@@ -93,7 +92,7 @@ class EmailForm extends React.Component {
                         </CardContent>
                     </Card>
                 </Paper>
-            </Box>
+            </Container>
         )
     }
 }

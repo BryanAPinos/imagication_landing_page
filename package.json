@@ -27,6 +27,7 @@
     "react-scripts": "4.0.3",
     "react-use": "^17.3.2",
     "reactstrap": "^9.0.2",
+    "typeface-lato": "^1.1.13",
     "web-vitals": "^1.1.2",
     "webfontloader": "^1.6.28"
   },

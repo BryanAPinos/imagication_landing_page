@@ -6,7 +6,7 @@ export default function ControlSection() {
     return (
         <div className="relative flex content-center items-center justify-center h-full">
         <section className="pb-20 bg-white-100 -mt-8">
-            <div className="container max-w-7xl mx-auto px-2">
+            <div className="container max-w-9xl mx-auto px-2">
                 <div className="flex flex-wrap items-center mt-32">
                     <div className="w-full md:w-5/12 px-4 mx-auto">
                         <Typography variant='h1'>

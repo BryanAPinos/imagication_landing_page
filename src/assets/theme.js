@@ -13,9 +13,12 @@ const theme = createTheme({
          `,
       },
     typography: {
-        fontFamily: 'Radio Canada',
+        fontFamily: 'Lato',
         h1: {
-          fontSize: '72px'
+          fontSize: '72px',
+          fontWeight: '600',
+          color: '#3D325F'
+
         }, 
         h2: {
           fontSize: '36px'
@@ -30,10 +33,11 @@ const theme = createTheme({
           fontSize: '26px'
         },
         subtitle1: {
-          fontSize: '22px'
+          fontSize: '22px',
+          fontWeight: '300'
         }, 
         subtitle2: {
-          fontSize: '18px'
+          fontSize: '18px',
         },
         button: {
           fontSize: '24px',

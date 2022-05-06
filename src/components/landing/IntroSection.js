@@ -7,8 +7,8 @@ export default function IntroSection() {
     return (
         <div className="relative flex content-center items-center justify-center h-full">
         <section className="pb-20 bg-white-100 -mt-30">
-            <div className="container max-w-7xl mx-auto px-2">
-                <div className="flex flex-wrap items-center mt-16">
+            <div className="container max-w-9xl mx-auto px-2">
+                <div className="flex flex-wrap items-center mt-20">
                     <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">
                         <Image 
                             alt="Card Image" 

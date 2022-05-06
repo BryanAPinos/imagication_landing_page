@@ -18,10 +18,10 @@ export default function Landing() {
             </Box>
             <main>
                 <Grid 
-                    container
-                    direction='colulmn'
-                    justifyContent='space-between'
-                    alignItems='stretch'
+                    // container
+                    // direction='colulmn'
+                    // justifyContent='space-between'
+                    // alignItems='stretch'
                 >
                     <Grid item>
                         <ExploreSection />
