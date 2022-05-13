@@ -30,7 +30,8 @@ export default function Footer() {
                             spacing={3}
                         >
                             <Grid item>
-                                <Avatar alt='Imagication' src='../../assets/img/logo.png' />
+                                <img src ={ImagicationLogo}/>
+                                {/* <Avatar alt='Imagication' src={ImagicationLogo}/> */}
                             </Grid>
 
                             <Grid item>
@@ -66,17 +67,23 @@ export default function Footer() {
                                 >
                                     <Grid item>
                                         <Typography variant='h3'>
+                                            <a href = "https://www.instagram.com/imagication.co/" target="_blank">
                                             <FontAwesomeIcon icon={brands('instagram')} />
+                                            </a>
                                         </Typography>
                                     </Grid>
                                     <Grid item>
                                         <Typography variant='h3'>
+                                        <a href='https://www.tiktok.com/@imagication_' target="_blank">
                                             <FontAwesomeIcon icon={brands('tiktok')} />
+                                        </a>
                                         </Typography>
                                     </Grid>
                                     <Grid item>
                                         <Typography variant='h3'>
+                                        <a href='https://www.linkedin.com/company/imagication' target="_blank">
                                             <FontAwesomeIcon icon={brands('linkedin')} />
+                                        </a>
                                         </Typography>
                                     </Grid>
                                 </Grid>

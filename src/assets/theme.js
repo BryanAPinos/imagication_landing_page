@@ -29,6 +29,9 @@ const theme = createTheme({
         h4: {
           fontSize: '48px'
         },
+        h5: {
+          fontSize: '30px'
+        },
         caption: {
           fontSize: '26px'
         },

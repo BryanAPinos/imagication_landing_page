@@ -29,7 +29,6 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 html {
-	-moz-tab-size: 4;
 	tab-size: 4;
 }
 /**
@@ -509,9 +508,6 @@ video {
 .z-50{
 	z-index: 50;
 }
-.z-30{
-	z-index: 30;
-}
 .mx-auto{
 	margin-left: auto;
 	margin-right: auto;
@@ -538,14 +534,20 @@ video {
 .mt-32{
 	margin-top: 8rem;
 }
+.mt-20{
+	margin-top: 5rem;
+}
 .mb-5{
 	margin-bottom: 1.25rem;
 }
-.-mt-7{
-	margin-top: -1.75rem;
+.-mt-5{
+	margin-top: -1.25rem;
 }
-.mt-20{
-	margin-top: 5rem;
+.mt-8{
+	margin-top: 2rem;
+}
+.mt-28{
+	margin-top: 7rem;
 }
 .flex{
 	display: flex;
@@ -571,8 +573,8 @@ video {
 .max-w-7xl{
 	max-width: 80rem;
 }
-.max-w-6xl{
-	max-width: 72rem;
+.max-w-5xl{
+	max-width: 64rem;
 }
 .flex-col{
 	flex-direction: column;
@@ -594,6 +596,9 @@ video {
 }
 .rounded-full{
 	border-radius: 9999px;
+}
+.border{
+	border-width: 1px;
 }
 .border-gray-300{
 	--tw-border-opacity: 1;
@@ -642,13 +647,29 @@ video {
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
-.px-3{
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
+.px-8{
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.px-1{
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
 }
 .px-10{
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
+}
+.px-40{
+	padding-left: 10rem;
+	padding-right: 10rem;
+}
+.px-3{
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+}
+.px-5{
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
 }
 .pt-8{
 	padding-top: 2rem;
@@ -661,6 +682,24 @@ video {
 }
 .pb-20{
 	padding-bottom: 5rem;
+}
+.pb-10{
+	padding-bottom: 2.5rem;
+}
+.pt-20{
+	padding-top: 5rem;
+}
+.pb-5{
+	padding-bottom: 1.25rem;
+}
+.pt-5{
+	padding-top: 1.25rem;
+}
+.pt-10{
+	padding-top: 2.5rem;
+}
+.pt-3{
+	padding-top: 0.75rem;
 }
 .text-center{
 	text-align: center;
@@ -718,8 +757,7 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 html {
-	-moz-tab-size: 4;
-	   tab-size: 4;
+	tab-size: 4;
 }
 /**
 1. Correct the line height in all browsers.
@@ -2227,14 +2265,23 @@ video {
 	.md\:w-4\/12{
 		width: 33.333333%;
 	}
-	.md\:w-6\/12{
-		width: 50%;
+	.md\:w-7\/12{
+		width: 58.333333%;
 	}
 	.md\:w-8\/12{
 		width: 66.666667%;
 	}
-	.md\:w-7\/12{
-		width: 58.333333%;
+	.md\:w-6\/12{
+		width: 50%;
+	}
+	.md\:w-3\/12{
+		width: 25%;
+	}
+	.md\:w-9\/12{
+		width: 75%;
+	}
+	.md\:w-2\/12{
+		width: 16.666667%;
 	}
 	.md\:justify-between{
 		justify-content: space-between;
@@ -2244,14 +2291,8 @@ video {
 	.lg\:mt-0{
 		margin-top: 0px;
 	}
-	.lg\:mt-1{
-		margin-top: 0.25rem;
-	}
-	.lg\:mt-7{
-		margin-top: 1.75rem;
-	}
-	.lg\:mt-20{
-		margin-top: 5rem;
+	.lg\:mt-2{
+		margin-top: 0.5rem;
 	}
 	.lg\:w-6\/12{
 		width: 50%;
@@ -2261,15 +2302,6 @@ video {
 	}
 	.lg\:items-center{
 		align-items: center;
-	}
-	.lg\:items-start{
-		align-items: flex-start;
-	}
-	.lg\:items-end{
-		align-items: flex-end;
-	}
-	.lg\:items-baseline{
-		align-items: baseline;
 	}
 	.lg\:text-left{
 		text-align: left;

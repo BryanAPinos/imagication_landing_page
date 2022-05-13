@@ -45,13 +45,13 @@ export default function ImagicationNavbar() {
                   </Link>
                 </Grid>
 
-                <Grid item>
+                {/* <Grid item>
                   <Link to='/ourstory'>
                     <Typography variant='button'>
                       Our Story
                     </Typography>
                   </Link>
-                 </Grid>
+                 </Grid> */}
 
                  <Grid item>
                    <Link to='/forschools'>
