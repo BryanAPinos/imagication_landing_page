@@ -8,12 +8,12 @@ export default function Header() {
         <section className="pb-20 bg-white-100 -mt-8">
             <div className="container max-w-9xl mx-auto px-2">
                 <div className="flex flex-wrap items-center mt-16">
-                    <div className="w-full md:w-6/12 px-4 mx-auto">
+                    <div className="w-full md:w-6/12 px-4 mx-auto ">
                         <Typography variant='h1'>
                             Let's build your campus together
                         </Typography>
                         <Typography variant='subtitle1'>
-                            Bring the magic to your campus
+                            If you would like your campus to be virtually created, email info@imagicagion.co for more information.
                         </Typography>
                     </div>                    
                     <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">

@@ -11,7 +11,7 @@ export default function ExploreSection() {
                 <div className="flex flex-wrap items-center mt-16">
                     <div className="w-full md:w-7/12 px-4 mx-auto">
                         <Typography variant='h1'>
-                            Explore without limitations.
+                            Explore without limitations
                         </Typography>
                         <Typography variant='subtitle1'>
                             Explore the endless possibilities in the comfort of your own home.  

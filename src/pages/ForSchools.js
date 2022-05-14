@@ -17,17 +17,17 @@ export default function OurStory() {
                <ImagicationNavbar />
             </Box>
             <main>
-            <Grid>
+            <Grid style ={{height: '55vh'}}>
                 <Grid item>
                     <Header />
                 </Grid>
                 <Grid>
-                    <EmailForm/>
+                    {/* <EmailForm/> */}
                 </Grid>
             </Grid>
 
             </main>
-            <Footer />
+                <Footer />
         </>
     );
 }
