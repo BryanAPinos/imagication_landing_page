@@ -38,55 +38,50 @@ class EmailForm extends React.Component {
         }
 
         return (
-            <Container >
+            <Container
+            className="pb-20 pt-20 -mt-8"
+            style={{maxWidth: '800px',minWidth: '100px'}}
+            >
                 <Paper
                     elevation={3}
                 >
                     <Card >
                         <CardContent>
                             <Grid 
-                                container
-                                direction='column'
-                                alignItems='center'
-                                justifyContent="center"
-                                
+                            container
+                            justifyContent='center'
                             >
-                                <Grid item>
+                                <Grid item
+                                >
                                     <Typography variant='h4'>
                                         You have to see it to believe it!
                                     </Typography>
-                                    <Typography variant='caption'>
-                                        Request a demo for Imagication!
+                                    <Typography variant='subtitle1'>
+                                        Join our mailing list to become one of the first to try it out
                                     </Typography>
                                 </Grid>
 
-                                <Grid item>
-                                    <Grid 
-                                        container
-                                        direction='row'
-                                        justifyContent='center'
-                                        alignItems='center'
-                                    >
+                                <Grid item className="pb-5 pt-5 -mt-8">
                                         <Grid item>
-                                            <Typography>
-                                                Enter Email
+                                            <Typography variant='subtitle2'>
+                                            Email
                                             </Typography>
                                         </Grid>
-                                        <Grid item>
-                                            <TextField variant='outlined' id='email' onChange={handleChangeInput} />
+                                        <Grid item >
+                                            <TextField style ={{minWidth: '32vw'}} variant='outlined' id='email' onChange={handleChangeInput} />
                                             
                                         </Grid>
-                                        <Grid item>
+                                        <Grid item className="pb-5 pt-5 -mt-8"  >
                                             <Button
                                                 variant='contained'
                                                 onClick={handleClick}
+                                                size="large"
                                             >
                                                 <Typography>
                                                     Explore
                                                 </Typography>
                                             </Button>
-                                        </Grid>
-                                    </Grid>    
+                                        </Grid> 
                                 </Grid>
                             </Grid>
                         </CardContent>
