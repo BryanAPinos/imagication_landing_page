@@ -7,6 +7,7 @@ import ExploreSection from 'components/landing/ExploreSection';
 import EmailForm from 'components/landing/EmailForm';
 import Footer from 'components/footers/Footer';
 import { Grid, Box } from '@mui/material'
+import MobileNavbar from '../components/navbar/MobileNavbar'
 
 export default function Landing() {
     return (
@@ -14,7 +15,9 @@ export default function Landing() {
            <Box 
                 sx={{ marginBottom: 20}}
             >
+
                <ImagicationNavbar />
+               {/* <MobileNavbar/> */}
             </Box>
             <main>
                 <Grid 
