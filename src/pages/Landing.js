@@ -8,6 +8,7 @@ import EmailForm from 'components/landing/EmailForm';
 import Footer from 'components/footers/Footer';
 import { Grid, Box } from '@mui/material'
 import MobileNavbar from '../components/navbar/MobileNavbar'
+import Alert from 'components/landing/Alert';
 
 export default function Landing() {
     return (
@@ -36,7 +37,8 @@ export default function Landing() {
                         <ControlSection /> 
                     </Grid>
                     <Grid item>
-                        <EmailForm />
+                        {/* <EmailForm /> */}
+                        <Alert/>
                     </Grid>
                 </Grid>
             </main>
