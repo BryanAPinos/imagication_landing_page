@@ -70,9 +70,11 @@ export default function ImagicationNavbar() {
                 variant='contained'
                 size='small'
               >
+                <a href='https://bryanapinos.github.io/ImagicationUnityBuilds/' target="_blank" rel="noopener noreferrer">
                 <Typography variant='button'>
                   Explore
                 </Typography>
+                </a>
               </Button>
             </Grid>
           </Grid>
