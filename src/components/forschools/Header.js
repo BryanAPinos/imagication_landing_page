@@ -13,7 +13,7 @@ export default function Header() {
                             Let's build your campus together
                         </Typography>
                         <Typography variant='subtitle1'>
-                            If you would like your campus to be virtually created, email info@imagicagion.co for more information.
+                            If you would like your campus to be virtually created, email info@imagication.co for more information.
                         </Typography>
                     </div>                    
                     <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">

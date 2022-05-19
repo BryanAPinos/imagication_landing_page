@@ -3,6 +3,7 @@ import Header from 'components/forschools/Header';
 import Footer from '../components/footers/Footer'
 import { Grid, Box } from '@mui/material'
 import EmailForm from 'components/forschools/EmailForm';
+import Video from 'components/forschools/Video';
 
 
 export default function OurStory() {
@@ -17,12 +18,12 @@ export default function OurStory() {
                <ImagicationNavbar />
             </Box>
             <main>
-            <Grid style ={{height: '55vh'}}>
+            <Grid >
                 <Grid item>
                     <Header />
                 </Grid>
-                <Grid>
-                    {/* <EmailForm/> */}
+                <Grid item container className='bg-gray-100'>
+                    <Video/>
                 </Grid>
             </Grid>
 
