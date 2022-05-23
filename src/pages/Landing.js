@@ -9,6 +9,18 @@ import Footer from 'components/footers/Footer';
 import { Grid, Box } from '@mui/material'
 import MobileNavbar from '../components/navbar/MobileNavbar'
 import Alert from 'components/landing/Alert';
+import { styled } from '@mui/material/styles';
+
+const Root = styled('div')(({ theme }) => ({
+
+
+    // Match [md, md + 1)
+    //       [md, lg)
+    //       [900px, 1200px)
+    [theme.breakpoints.up('sm')]:  { 
+      display: 'none'
+    },
+  }));
 
 export default function Landing() {
     return (
@@ -16,9 +28,11 @@ export default function Landing() {
            <Box 
                 sx={{ marginBottom: 20}}
             >
-
+                
                <ImagicationNavbar />
-               {/* <MobileNavbar/> */}
+               <Root>
+               <MobileNavbar/>
+               </Root>
             </Box>
             <main>
                 <Grid 
@@ -37,7 +51,7 @@ export default function Landing() {
                         <ControlSection /> 
                     </Grid>
                     <Grid item>
-                        {/* <EmailForm /> */}
+                        
                         <Alert/>
                     </Grid>
                 </Grid>

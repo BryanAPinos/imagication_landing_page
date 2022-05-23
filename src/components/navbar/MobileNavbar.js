@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from "react-router-dom";
 import { Typography, Box, Container, Toolbar, Button, Grid,  } from '@mui/material';
-import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import List from '@mui/material/List';
@@ -12,124 +11,128 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { AppBar, Drawer } from '@mui/material';
+import CloseIcon from "@mui/icons-material/Close";
+import SchoolIcon from '@mui/icons-material/School';
+import HomeIcon from '@mui/icons-material/Home';
 
-export default function ImagicationNavbar() {
-    const [state, setState] = useState(false);
+export default function MobileNavbar() {
+  const [open, setState] = useState(false);
 
-    const toggleDrawer = (anchor, open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-          return;
-        }
-    
-        setState({ ...state, [anchor]: open });
-      };
+  const toggleDrawer = (open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+    //changes the function state according to the value of open
+    setState(open);
+  };
 
-      const links = [
-          {
-              name: 'Home',
-              to: '/'
-          },
-          {
-              name: 'For Schools',
-              to: '/forschools'
-          },
-      ]
-    
-      const list = () => (
-        <Box
-        >
-          <List>
-          {links.map(link => (<Link to={link.to}>{link.name}</Link> ))}
-              <ListItem  disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>
-                    <MenuIcon/>
-                  </ListItemIcon>
-                  <ListItemText  />
-                </ListItemButton>
-              </ListItem>
-
-          </List>
-        </Box>
-      );
     
 
   return ( 
-    <Box sx={{ flexGrow: 1 }}>
-      {['Menu'].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-          >
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
-      {/* <Container
-        style={{
-          paddingTop: '32px',
-        }}
-      >
+    <AppBar position="static">
+      <Container maxWidth="md" disableGutters="true">
         <Toolbar>
-          <Grid 
-            container
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            spacing={3}
-          >
-            <Grid item>
-              <Link to='/'>
-                  <Typography variant='button'>
-                    Imagication
-                  </Typography>
-              </Link>
-              
-            </Grid>
 
-            <Grid item xs={6}>
-              <Grid 
-                container
-                direction='row'
-                justifyContent='space-evenly'
-                alignItems='center'
-              >
+            <Typography variant="h3" sx={{flexGrow: 1, fontWeight: 500}}>
+              Imagication
+            </Typography>
 
-                <Grid item>
-                  <Link to='/'>
-                    <Typography variant='button'>
-                      Home
-                    </Typography>
-                  </Link>
-                </Grid>
+            <Box component="div" sx={{
+              display: {
+                xs: 'none',
+                sm: 'block',
+              }
+            }}>
+      
+            </Box>
 
-                 <Grid item>
-                   <Link to='/forschools'>
-                      <Typography variant='button'>
-                        For Schools
-                      </Typography>
+            <IconButton 
+              edge="start" 
+              color="inherit" 
+              aria-label="open drawer" 
+              onClick={toggleDrawer(true)}
+              sx={{ 
+                mr: 2,
+                display: {
+                  xs: 'block',
+                  sm: 'none',
+                }
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
+
+            {/* The outside of the drawer */}
+            <Drawer
+              //from which side the drawer slides in
+              anchor="right"
+              //if open is true --> drawer is shown
+              open={open}
+              //function that is called when the drawer should close
+              onClose={toggleDrawer(false)}
+              //function that is called when the drawer should open
+              onOpen={toggleDrawer(true)}
+            >
+                {/* The inside of the drawer */}
+                <Box sx={{
+                  p: 2,
+                  height: 1,
+                  backgroundColor: "#dbc8ff",
+                }}>
+
+                  {/* 
+                  when clicking the icon it calls the function toggleDrawer 
+                  and closes the drawer by setting the variable open to false
+                  */}
+                  <IconButton sx={{mb: 2}}>
+                    <CloseIcon onClick={toggleDrawer(false)} />
+                  </IconButton>
+
+                  <Divider sx={{mb: 2}} />
+
+                  <Box sx={{mb: 2}}>
+                    <Link to='/'>
+                    <ListItemButton>
+                      <ListItemIcon>
+                      <HomeIcon/>
+                      </ListItemIcon>
+                      <ListItemText primary="Home" />
+                    </ListItemButton>
                     </Link>
-                  </Grid>
-               
-               </Grid>  
-            </Grid>
 
-            <Grid item>
-              <Button 
-                variant='contained'
-                size='small'
-              >
-                <Typography variant='button'>
-                  Explore
-                </Typography>
-              </Button>
-            </Grid>
-          </Grid>
-        </Toolbar>
-      </Container>  */}
-    </Box>
+                    <Link to='/forschools'>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <SchoolIcon/>
+                      </ListItemIcon >
+                      <ListItemText primary="For Schools" />
+                    </ListItemButton>
+                    </Link>
+                  </Box>
+                  
+     
+
+                  {/* <Box sx={{
+                    display: "flex", 
+                    justifyContent:"center", 
+                    position: "absolute", 
+                    bottom: "5%", 
+                    left: "50%", 
+                    transform: "translate(-50%, 0)"}}
+                  >
+                    <a href='https://bryanapinos.github.io/ImagicationUnityBuilds/' target="_blank" rel="noopener noreferrer">
+                    <Button variant="contained" sx={{m:1, width: .8}}>Explore</Button>
+                    </a>
+                  </Box> */}
+                </Box>
+              
+            </Drawer>
+           
+
+          </Toolbar>
+      </Container>
+    </AppBar>
+   
   )
 }
