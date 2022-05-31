@@ -7,7 +7,7 @@ export default function Header() {
         <section className=" bg-white-100 -mt-8">
             <div className="container max-w-9xl mx-auto px-2">
                 <div className="flex flex-wrap items-center mt-16">
-                    <div className="flex flex-col justify-center items-center w-full md:w-7/12 px-4 mx-auto font-bold">
+                    <div className="flex flex-col justify-center items-center w-full px-4 mx-auto font-bold sm:small">
                         <Typography variant='h2' style={{fontWeight: '600', color: '#4A4657'}}>
                             Student-First Initiative 
                         </Typography>

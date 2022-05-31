@@ -5,8 +5,29 @@ import { Typography, Button, Grid} from '@mui/material'
 import OurStoryText from 'components/ourstory/OurStoryText';
 import Team from '../components/ourstory/Team.js'
 import SlideShow from 'components/ourstory/SlideShow';
-
+import { styled } from '@mui/material/styles';
+import MobileNavbar from 'components/navbar/MobileNavbar';
+import MobileTeam from '../components/ourstory/MobileTeam.js';
 export default function ForSchools() {
+    const Root = styled('div')(({ theme }) => ({
+
+
+        [theme.breakpoints.up('sm')]:  { 
+          display: 'none'
+        },
+      }));
+
+      const RespTeam = styled('div')(({ theme }) => ({
+
+
+        // Match [md, md + 1)
+        //       [md, lg)
+        //       [900px, 1200px)
+        [theme.breakpoints.down('sm')]:  { 
+          display: 'none'
+        },
+      }));
+    
     return (
         <>
         <Grid 
@@ -16,6 +37,9 @@ export default function ForSchools() {
                 {/* <div className="absolute w-full z-20"> */}
                     <ImagicationNavbar />
                 {/* </div> */}
+                <Root>
+               <MobileNavbar/>
+               </Root>
             </Grid>
             <Grid item >
                 <main>
@@ -27,7 +51,14 @@ export default function ForSchools() {
                 <OurStoryText/>
             </Grid>
             <Grid>
-                <Team/>
+                <RespTeam>
+                    <Team/>
+                </RespTeam>
+                
+                <Root>
+                    <MobileTeam/>
+                </Root>
+
             </Grid>
 
 

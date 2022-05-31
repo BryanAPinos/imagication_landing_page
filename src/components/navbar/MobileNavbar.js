@@ -15,6 +15,7 @@ import { AppBar, Drawer } from '@mui/material';
 import CloseIcon from "@mui/icons-material/Close";
 import SchoolIcon from '@mui/icons-material/School';
 import HomeIcon from '@mui/icons-material/Home';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
 
 export default function MobileNavbar() {
   const [open, setState] = useState(false);
@@ -98,6 +99,15 @@ export default function MobileNavbar() {
                       <HomeIcon/>
                       </ListItemIcon>
                       <ListItemText primary="Home" />
+                    </ListItemButton>
+                    </Link>
+
+                    <Link to='/ourstory'>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <LightbulbIcon/>
+                      </ListItemIcon >
+                      <ListItemText primary="Our Story" />
                     </ListItemButton>
                     </Link>
 

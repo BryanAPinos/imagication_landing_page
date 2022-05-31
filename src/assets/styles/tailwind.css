@@ -2270,6 +2270,9 @@ video {
 	.md\:w-5\/12{
 		width: 41.666667%;
 	}
+	.md\:flex-col{
+		flex-direction: column;
+	}
 	.md\:justify-between{
 		justify-content: space-between;
 	}
