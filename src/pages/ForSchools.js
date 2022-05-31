@@ -2,7 +2,6 @@ import ImagicationNavbar from '../components/navbar/ImagicationNavbar'
 import Header from 'components/forschools/Header';
 import Footer from '../components/footers/Footer'
 import { Grid, Box } from '@mui/material'
-import EmailForm from 'components/forschools/EmailForm';
 import Video from 'components/forschools/Video';
 import { styled } from '@mui/material/styles';
 import MobileNavbar from 'components/navbar/MobileNavbar';

@@ -1,5 +1,4 @@
-import Image from '@material-tailwind/react/Image';
-import { Typography, Button, Box, Grid, Card, CardContent, CardMedia, Container} from '@mui/material'
+import { Typography, Box, Grid, Card, CardContent, Container} from '@mui/material'
 import Diana from  '../../assets/img/1.jpg';
 import Bryan from  '../../assets/img/2.PNG'
 import Nallely from  '../../assets/img/3.jpg'

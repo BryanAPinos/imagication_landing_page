@@ -1,6 +1,4 @@
-import Explore from 'assets/img/explore.jpg';
-import Image from '@material-tailwind/react/Image'
-import { Typography, Grid, Box } from '@mui/material'
+import {Box } from '@mui/material'
 
 
 export default function Video() {
