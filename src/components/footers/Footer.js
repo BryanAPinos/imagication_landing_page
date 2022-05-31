@@ -50,9 +50,9 @@ export default function Footer() {
                                 <Typography variant='subtitle2'>
                                     info@imagication.co
                                 </Typography>
-                                <Typography variant='subtitle2'>
+                                {/* <Typography variant='subtitle2'>
                                     201-663-5412
-                                </Typography>
+                                </Typography> */}
 
                             </Grid>
 

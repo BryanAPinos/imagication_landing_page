@@ -40,7 +40,8 @@ const theme = createTheme({
           fontWeight: '300'
         }, 
         subtitle2: {
-          fontSize: '18px',
+          fontSize: '16px',
+          fontWeight: '300'
         },
         button: {
           fontSize: '24px',

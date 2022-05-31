@@ -32,11 +32,11 @@ export default function DefaultFooter() {
                                         Email: info@imagication.co 
                                     </LeadText>
                                 </div>
-                                <div className="-mt-4">
+                                {/* <div className="-mt-4">
                                     <LeadText color="blueGray">
                                         +1 201-663-5412 
                                     </LeadText>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
