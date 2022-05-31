@@ -37,7 +37,12 @@ export default function OurStory() {
                 <Grid item>
                     <Header />
                 </Grid>
-                <Grid item container className='bg-gray-100'>
+                <Grid 
+                container 
+                className='bg-gray-100'   
+                direction="column"
+                justifyContent="center"
+                alignItems="center">
                     <Video/>
                 </Grid>
             </Grid>
