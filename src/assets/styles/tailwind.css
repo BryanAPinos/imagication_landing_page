@@ -647,8 +647,14 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 }
+.p-8{
+	padding: 2rem;
+}
 .p-3{
 	padding: 0.75rem;
+}
+.p-10{
+	padding: 2.5rem;
 }
 .px-4{
 	padding-left: 1rem;
@@ -657,6 +663,26 @@ video {
 .px-2{
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
+}
+.py-20{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.py-16{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.py-4{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.py-5{
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+.py-8{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 .pt-8{
 	padding-top: 2rem;
@@ -691,6 +717,9 @@ video {
 .pb-36{
 	padding-bottom: 9rem;
 }
+.pr-12{
+	padding-right: 3rem;
+}
 .text-center{
 	text-align: center;
 }
@@ -710,6 +739,10 @@ video {
 }
 .shadow-md{
 	--tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-lg{
+	--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .tippy-box[data-placement^=top]>.tippy-svg-arrow{bottom:0}
