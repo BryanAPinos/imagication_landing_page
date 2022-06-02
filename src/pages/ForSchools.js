@@ -5,6 +5,7 @@ import { Grid, Box } from '@mui/material'
 import Video from 'components/forschools/Video';
 import { styled } from '@mui/material/styles';
 import MobileNavbar from 'components/navbar/MobileNavbar';
+import SalesForm from 'components/forschools/SalesForm.js';
 
 const Root = styled('div')(({ theme }) => ({
 
@@ -24,7 +25,7 @@ export default function OurStory() {
                 <ImagicationNavbar />
             </div> */}
             <Box 
-                sx={{ marginBottom: 20}}
+                sx={{ marginBottom: 10}}
             >
                <ImagicationNavbar />
                <Root>
