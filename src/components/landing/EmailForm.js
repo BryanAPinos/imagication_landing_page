@@ -90,7 +90,7 @@ class EmailForm extends React.Component {
                                                 size="large"
                                             >
                                                 <Typography>
-                                                    Explore
+                                                    Subscribe
                                                 </Typography>
                                             </Button>
 

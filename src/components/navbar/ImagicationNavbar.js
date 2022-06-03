@@ -93,7 +93,7 @@ export default function ImagicationNavbar() {
               >
                 <a href='https://bryanapinos.github.io/ImagicationUnityBuilds/' target="_blank" rel="noopener noreferrer">
                 <Typography variant='button' className='md:disappear'>
-                  Explore
+                  Launch Imagication
                 </Typography>
                 </a>
               </Button>
