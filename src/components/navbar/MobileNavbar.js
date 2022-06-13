@@ -43,6 +43,7 @@ export default function MobileNavbar() {
               display: {
                 xs: 'none',
                 sm: 'block',
+                md: 'block'
               }
             }}>
       
@@ -57,7 +58,8 @@ export default function MobileNavbar() {
                 mr: 2,
                 display: {
                   xs: 'block',
-                  sm: 'none',
+                  sm: 'block',
+                  md: 'block'
                 }
               }}
             >

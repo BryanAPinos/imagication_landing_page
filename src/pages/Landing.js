@@ -16,7 +16,7 @@ const Root = styled('div')(({ theme }) => ({
     // Match [md, md + 1)
     //       [md, lg)
     //       [900px, 1200px)
-    [theme.breakpoints.up('sm')]:  { 
+    [theme.breakpoints.up('md')]:  { 
       display: 'none'
     },
   }));

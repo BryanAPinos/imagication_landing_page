@@ -10,7 +10,7 @@ const Root = styled('div')(({ theme }) => ({
   // Match [md, md + 1)
   //       [md, lg)
   //       [900px, 1200px)
-  [theme.breakpoints.between('xs', 'sm')]: {
+  [theme.breakpoints.between('xs', 'md')]: {
     display: 'none'
   },
 }));
@@ -93,7 +93,7 @@ export default function ImagicationNavbar() {
               >
                 <a href='https://bryanapinos.github.io/ImagicationUnityBuilds/' target="_blank" rel="noopener noreferrer">
                 <Typography variant='button' className='md:disappear'>
-                  Launch Imagication
+                  Launch
                 </Typography>
                 </a>
               </Button>
