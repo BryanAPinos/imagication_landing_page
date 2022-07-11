@@ -10,11 +10,10 @@ export default function ControlSection() {
                 <div className="flex flex-wrap items-center mt-32">
                     <div className="w-full md:w-5/12 px-4 mx-auto">
                         <Typography variant='h1'>
-                            Take control of your future.
+                        Interactive Environment
                         </Typography>
                         <Typography variant='subtitle1'>
-                        Don’t have enough cash to visit a campus over 500 miles away? Don’t worry. With Imagication, you can plan a virtual trip to any campus and interact with tour guides.  
-                        </Typography>
+                        Ditch 2D virtual tours. Enter the metaverse and interact with your surroundings to learn more about the colleges.                        </Typography>
                     </div>
 
                     <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">

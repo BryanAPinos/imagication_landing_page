@@ -9,6 +9,7 @@ import { Grid, Box } from '@mui/material'
 import MobileNavbar from '../components/navbar/MobileNavbar'
 import Alert from 'components/landing/Alert';
 import { styled } from '@mui/material/styles';
+import Accessible from 'components/landing/Accessible';
 
 const Root = styled('div')(({ theme }) => ({
 
@@ -50,6 +51,9 @@ export default function Landing() {
                     </Grid>
                     <Grid item>
                         <ControlSection /> 
+                    </Grid>
+                    <Grid item>
+                        <Accessible/>
                     </Grid>
                     <Grid item>
                         

@@ -3,7 +3,7 @@ import Intro from 'assets/img/introducing.jpg'
 import { Typography } from '@mui/material'
 
 
-export default function IntroSection() {
+export default function Accessible() {
     return (
         <div className="relative flex content-center items-center justify-center h-full">
         <section className="pb-20 bg-white-100 -mt-30">
@@ -18,10 +18,10 @@ export default function IntroSection() {
                     </div>
                     <div className="w-full md:w-5/12 px-4 mx-auto">
                         <Typography variant='h1'>
-                        Stay Connected 
+                        Always Accessible
                         </Typography>
                         <Typography variant='subtitle1'>
-                        No cash? No worries. With Imagication, you can plan a virtual trip to any campus and interact with other students! 
+                        No download necessary. Just a laptop and you!                        
                         </Typography>
                     </div>
 

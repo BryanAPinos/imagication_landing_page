@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { Typography, Box, Container, Toolbar, Button, Grid,  } from '@mui/material';
-import { red, green, blue } from '@mui/material/colors';
 import { styled } from '@mui/material/styles';
 
 const Root = styled('div')(({ theme }) => ({
@@ -97,7 +96,6 @@ export default function ImagicationNavbar() {
                 </Typography>
                 </a>
               </Button>
-
             </Grid>
        
             {/* </styles> */}

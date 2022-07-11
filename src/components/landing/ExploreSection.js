@@ -14,7 +14,7 @@ export default function ExploreSection() {
                             Explore without limitations
                         </Typography>
                         <Typography variant='subtitle1'>
-                            Explore the endless possibilities in the comfort of your own home.  
+                            Imagication makes visiting college campuses easier than ever! 
                         </Typography>
                     </div>                    
                     <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">

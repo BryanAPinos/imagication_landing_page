@@ -54,8 +54,8 @@ const theme = createTheme({
     palette: {
       primary: {
         main: '#3D325F',
-        darker: '#140C35',
-        lighter: '#140C35',
+        darker: '#342A50',
+        lighter: '#584686',
       },
     },
     screens: {
