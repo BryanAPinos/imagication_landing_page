@@ -2,7 +2,7 @@
   "name": "imagiation-landing-page",
   "version": "1.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/Imagication/imagication_landing_page",
+  "homepage": "https://imagication.github.io/imagication_landing_page/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
