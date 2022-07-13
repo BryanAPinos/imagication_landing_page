@@ -2,7 +2,7 @@
   "name": "imagiation-landing-page",
   "version": "1.1.0",
   "private": true,
-  "homepage": "https://imagication.co",
+  "homepage": "https://myusername.github.io/Imagication/imagication_landing_page",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -21,6 +21,7 @@
     "bowser": "^2.11.0",
     "eslint-config-react-app": "6",
     "firebase": "^9.6.11",
+    "gh-pages": "^4.0.0",
     "headroom.js": "^0.12.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -41,7 +42,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "npm:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "yarn:clean": "rm -rf node_modules/ && rm -rf package-lock.json && yarn install && yarn start"
+    "yarn:clean": "rm -rf node_modules/ && rm -rf package-lock.json && yarn install && yarn start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
