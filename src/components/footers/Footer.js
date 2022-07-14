@@ -34,7 +34,7 @@ export default function Footer() {
                             <Grid item style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}} >
                                 <img className="h-16" src ={ImagicationLogo}/>
                                 <Typography variant='h6' style={{paddingLeft: ''}} className='px-6'>
-                                    Imagication, Inc. 2022
+                                    Imagication, Inc 2022
                                 </Typography>
                                 {/* <Avatar alt='Imagication' src={ImagicationLogo}/> */}
                             </Grid>
