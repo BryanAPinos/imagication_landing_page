@@ -13,5 +13,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEV_IMAGICATION }}'
-          projectId: dev-imagication
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_IMAGICATION_CA3D7 }}'
+          projectId: imagication-ca3d7
