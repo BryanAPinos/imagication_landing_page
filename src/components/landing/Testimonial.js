@@ -12,7 +12,7 @@ export default function Testimonial() {
                   justifyContent="center"
                   alignItems="center"
                     className='bg-white rounded-xl shadow-md'
-                    style={{width: '32rem', height: '6rem'}}
+                    style={{width: '32rem', height: '8rem'}}
                     >
                     <Avatar src={K_Person} sx={{ width: 56, height: 56 }}/>
                     <Grid className='pl-4'>
