@@ -15,7 +15,7 @@ const theme = createTheme({
     typography: {
         fontFamily: 'Lato',
         h1: {
-          fontSize: '72px',
+          fontSize: '64px',
           fontWeight: '600',
           color: '#3D325F'
 

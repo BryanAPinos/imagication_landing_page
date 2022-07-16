@@ -10,7 +10,8 @@ import MobileNavbar from '../components/navbar/MobileNavbar'
 import Alert from 'components/landing/Alert';
 import { styled } from '@mui/material/styles';
 import Accessible from 'components/landing/Accessible';
-
+import Testimonial from 'components/landing/Testimonial.js';
+import Navigate from 'components/landing/Navigate';
 const Root = styled('div')(({ theme }) => ({
 
 
@@ -37,29 +38,13 @@ export default function Landing() {
                </Root>
             </Box>
             <main>
-                <Grid 
-                    // container
-                    // direction='colulmn'
-                    // justifyContent='space-between'
-                    // alignItems='stretch'
-                >
-                    <Grid item>
-                        <ExploreSection />
-                    </Grid>
-                    <Grid item>
-                        <IntroSection />
-                    </Grid>
-                    <Grid item>
-                        <ControlSection /> 
-                    </Grid>
-                    <Grid item>
-                        <Accessible/>
-                    </Grid>
-                    <Grid item>
-                        
-                        <Alert/>
-                    </Grid>
-                </Grid>
+                <ExploreSection />
+                <Testimonial/>
+                <IntroSection />
+                <ControlSection /> 
+                <Accessible/>
+                <Navigate/>
+                {/* <Alert/> */}
             </main>
             <Footer />
         </>

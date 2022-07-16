@@ -9,7 +9,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Footer() {
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box >
             <AppBar 
                     position='static'
                     
@@ -18,8 +18,8 @@ export default function Footer() {
                 >
                 <Container
                     style={{
-                        paddingTop: '50px',
-                        paddingBottom: '50px',
+                        paddingTop: '20px',
+                        paddingBottom: '20px',
                         
                     }}
                 >
@@ -32,7 +32,7 @@ export default function Footer() {
                             spacing={3}
                         >
                             <Grid item style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}} >
-                                <img className="h-16" src ={ImagicationLogo}/>
+                                <img className="h-12" src ={ImagicationLogo}/>
                                 <Typography variant='h6' style={{paddingLeft: ''}} className='px-6'>
                                     Imagication, Inc. 2022
                                 </Typography>
