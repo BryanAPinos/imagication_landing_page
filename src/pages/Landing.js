@@ -11,7 +11,7 @@ import Alert from 'components/landing/Alert';
 import { styled } from '@mui/material/styles';
 import Accessible from 'components/landing/Accessible';
 import Testimonial from 'components/landing/Testimonial.js';
-
+import Navigate from 'components/landing/Navigate';
 const Root = styled('div')(({ theme }) => ({
 
 
@@ -43,8 +43,8 @@ export default function Landing() {
                 <IntroSection />
                 <ControlSection /> 
                 <Accessible/>
-
-                <Alert/>
+                <Navigate/>
+                {/* <Alert/> */}
             </main>
             <Footer />
         </>
