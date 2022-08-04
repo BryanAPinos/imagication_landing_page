@@ -1,12 +1,11 @@
 import {Box } from '@mui/material'
 
 
-export default function Video() {
+export default function SmallerVideo() {
     return (
         <Box className="pb-20 mt-16">
                         <iframe 
-                        width='900'
-                        height='600'
+
 
                         src='https://www.youtube.com/embed/E5hqcM2AeSM'
                         title="YouTube video player" 
@@ -15,6 +14,5 @@ export default function Video() {
         </Box>
     );
 }
-
 
 

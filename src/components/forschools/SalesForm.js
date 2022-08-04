@@ -1,8 +1,9 @@
-import {Box, TextField, Grid, OutlinedInput, InputLabel, FormControl, Button, Snackbar} from '@mui/material'
+import {Box, TextField, Grid, OutlinedInput, InputLabel, FormControl, Button, Snackbar, Typography} from '@mui/material'
 import React, {useState} from 'react'
 import MuiAlert from "@mui/material/Alert";
-
-
+import Dave from '../../assets/img/Dave.png'
+import Image from '@material-tailwind/react/Image';
+import { DataSaverOffRounded } from '@mui/icons-material';
 var Airtable = require('airtable')
 var base = new Airtable({apiKey: 'keyMWwdaxj6E6CFik'}).base('appIBO0Hqnl5sk2Wm');
 
@@ -58,93 +59,117 @@ export default function SalesForm() {
 
 
     return (
-        <Box className="shadow-lg p-8 " style={{ width: '45vw'}}
+        <Box className='py-16' 
         >
-            <Grid
-              container
-              direction="column"
-              justifyContent="center"
-              alignItems="center"
+            <Grid container justifyContent='center'>
+                <Typography variant ='h3'>
+                Become one of the first schools to join the metaverse!
+                </Typography>
+            </Grid>
+            
+            <Grid container className='py-8'
+                    justifyContent='center'
+                    
+                    // style={{flexShrink: '1'}}
+                    alignItems='center'
             >
-                <Grid item
-                    container
-                    direction="row"
-                    justifyContent="space-between"
-                    alignItems="center"
-                    
-                >
-                    <Box className='py-4'>
-                        <TextField
-                        required
-                        label='First name'
-                        value={firstName}
-                        onChange={(e) => setfirstName(e.target.value)}
-                        
-                        />
-                    </Box>
-                    <Box className='py-4'>
-                        <TextField
-                        required
-                        label='Last Name'
-                        value={lastName}
-                        onChange={(e) => setlastName(e.target.value)}
-                        />
-                    </Box>
 
+               <Grid style={{paddingRight: '5rem'}}>
+                    <Image style={{width: '18rem'}}  src={Dave} />
                 </Grid>
-                <Grid item
-                    container
-                    direction="row"
-                    justifyContent="space-between"
-                    alignItems="center"
-                    className='py-4'
+ 
+            <Grid className="shadow-lg p-8" >
+                <Grid
+                container
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
                 >
-                <FormControl required fullWidth >
-                    <InputLabel htmlFor="outlined-adornment-amount">Work Email
-                    </InputLabel>
-                    <OutlinedInput
-                        id="email"
-                        label="Work Email"
-                        value={email}
-                        required
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </FormControl>
-                </Grid>
-                <Grid item
-                    container
-                    direction="row"
-                    justifyContent="space-between"
-                    alignItems="center"
-                    
-                >
-                    <Box className='py-4'>
-                        <TextField
+                    <Grid item
+                        container
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        
+                    >
+                        <Box className='py-4' style={{flexGrow: '1'}}>
+                            <TextField
                             required
-                            label='School Name'
-                            margin="dense"
-                            value={school}
-                            onChange={(e) => setSchool(e.target.value)}
+                            label='First name'
+                            value={firstName}
+                            style={{width: '95%'}}
+                            onChange={(e) => setfirstName(e.target.value)}
                             
-                            />     
-                    </Box>     
-                    <Box className='py-4'> 
-                        <TextField
-                        required
-                        // helperText='Format: (123)-456-7890'
-                        label='Phone Number'
-                        value={number}
-                        onChange={(e) => setNumber(e.target.value)}
-                        />   
-                        </Box>                         
-                              
+                            />
+                        </Box>
+                        <Box className='py-4' style={{ flexGrow: '1'}}>
+                            <TextField
+                            required
+                            label='Last Name'
+                            style={{width: '100%'}}
+                            value={lastName}
+                            onChange={(e) => setlastName(e.target.value)}
+                            />
+                        </Box>
+
+                    </Grid>
+                    <Grid item
+                        container
+                        direction="row"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        className='py-4'
+                    >
+                    <FormControl required fullWidth >
+                        <InputLabel htmlFor="outlined-adornment-amount">Work Email
+                        </InputLabel>
+                        <OutlinedInput
+                            id="email"
+                            label="Work Email"
+                            value={email}
+                            required
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </FormControl>
+                    </Grid>
+                    <Grid item
+                        container
+                        direction="row"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        
+                    >
+                        <Box className='py-4'style={{ flexGrow: '1'}}>
+                            <TextField
+                                required
+                                label='School Name'
+                                margin="dense"
+                                value={school}
+                                style={{width: '95%'}}
+                                onChange={(e) => setSchool(e.target.value)}
+                                
+                                />     
+                        </Box>     
+                        <Box className='py-4' style={{ flexGrow: '1'}}> 
+                            <TextField
+                            required
+                            // helperText='Format: (123)-456-7890'
+                            label='Phone Number'
+                            value={number}
+                            style={{width: '100%'}}
+                            onChange={(e) => setNumber(e.target.value)}
+                            />   
+                            </Box>                         
+                                
+                    </Grid>
                 </Grid>
-            </Grid>
-            <Grid className='pt-8'>
-                <Button variant='contained' size='large' onClick={handleClick}>
-                    Submit
-                </Button>
-            </Grid>
+                <Grid className='pt-8'>
+                    <Button variant='contained' size='large' onClick={handleClick}>
+                        Submit
+                    </Button>
+                </Grid>
+                    </Grid>
+                        </Grid>
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
                     Thank you for subscribing!

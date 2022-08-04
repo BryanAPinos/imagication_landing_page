@@ -1,7 +1,7 @@
 import Image from '@material-tailwind/react/Image';
 import { Typography } from '@mui/material'
-import StevensCampus from 'assets/img/StevensCampus.jpg'
-import SalesForm from './SalesForm.js'
+import "@lottiefiles/lottie-player";
+
 
 export default function Header() {
     return (
@@ -23,7 +23,8 @@ export default function Header() {
                             raised={false}
                             src={StevensCampus} 
                         /> */}
-                        <SalesForm/>
+                        
+                        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_jvzqxdom.json" background="transparent"  speed="0.95" loop autoplay></lottie-player>
                     </div>
                 </div>
             </div>
