@@ -27,7 +27,6 @@ const Root = styled('div')(({ theme }) => ({
     //       [900px, 1200px)
     [theme.breakpoints.up('md')]:  { 
       display: 'none',
-      backgroundColor: 'red'
     },
   }));
 

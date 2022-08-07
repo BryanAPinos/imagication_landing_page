@@ -20,11 +20,11 @@ export default function SalesForm() {
         return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
     });
 
-    const handleClick = function (event) {
-        if (firstName || lastName || email || school || number == "") {
-            alert("There is a field missing information");
-            return false;
-        }
+    const handleClick = function (e) {
+        // if (firstName || lastName || email || school || number == "") {
+        //     alert("There is a field missing information");
+        //     return false;
+        // }
         base('School').create([
             {
                 'fields': {
@@ -33,7 +33,8 @@ export default function SalesForm() {
                     'Email': email,
                     'School': school,
                     'Number': number,
-                    'Date': cDate
+                    'Date': cDate,
+                    'help': help
                 }
             }
         ])
@@ -44,6 +45,7 @@ export default function SalesForm() {
     const [lastName, setlastName] = useState("");
     const [school, setSchool] = useState("");
     const [number, setNumber] = useState("");
+    const [help, setHelp] = useState("");
 
     const [open, setOpen] = useState(false);
     const [empty, setEmpty] = useState(false);
@@ -121,11 +123,11 @@ export default function SalesForm() {
                         className='py-4'
                     >
                     <FormControl required fullWidth >
-                        <InputLabel htmlFor="outlined-adornment-amount">Work Email
+                        <InputLabel htmlFor="outlined-adornment-amount">Email
                         </InputLabel>
                         <OutlinedInput
                             id="email"
-                            label="Work Email"
+                            label="Email"
                             value={email}
                             required
                             onChange={(e) => setEmail(e.target.value)}
@@ -162,6 +164,25 @@ export default function SalesForm() {
                             </Box>                         
                                 
                     </Grid>
+                    <Grid 
+                        container
+                        direction="row"
+                        justifyContent="space-between"
+                        alignItems="center"
+                    >
+                        <Box className='py-4'style={{ flexGrow: '1'}}>
+                            <TextField
+                            label='How can we help you?'
+                            rows={4}
+                            style={{width: '100%'}}
+                            value={help}
+                            onChange={(e) => setHelp(e.target.value)}
+                            multiline
+                            />
+                        </Box>
+
+                        
+                    </Grid>
                 </Grid>
                 <Grid className='pt-8'>
                     <Button variant='contained' size='large' onClick={handleClick}>
@@ -172,7 +193,7 @@ export default function SalesForm() {
                         </Grid>
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
-                    Thank you for subscribing!
+                    Our Sales Team will contact you soon
                 </Alert>
             </Snackbar>
         </Box>

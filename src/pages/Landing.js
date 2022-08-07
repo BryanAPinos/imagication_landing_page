@@ -43,8 +43,8 @@ export default function Landing() {
                 <IntroSection />
                 <ControlSection /> 
                 <Accessible/>
-                {/* <Navigate/> */}
-                <Alert/>
+                <Navigate/>
+                {/* <Alert/> */}
             </main>
             <Footer />
         </>
