@@ -38,7 +38,11 @@ export default function Footer() {
                                 </Typography>
                                 {/* <Avatar alt='Imagication' src={ImagicationLogo}/> */}
                             </Grid>
-
+                            <Grid item>
+                                <Typography variant='h6'>
+                                <a style={{textDecoration:'underline'}} href='https://docs.google.com/document/d/1mwL4uVxAwIPYm81r65ataO4dujuGMDmfIcospBK6jkA/edit?usp=sharing' target="_blank"  rel="noreferrer noopener">Privacy Policy</a>
+                                </Typography>
+                            </Grid>
 
 
                             <Grid item >
