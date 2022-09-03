@@ -40,9 +40,13 @@ export default function Landing() {
             <main>
                 <ExploreSection />
                 <Testimonial/>
-                <IntroSection />
-                <ControlSection /> 
-                <Accessible/>
+                {/* Below is the main content */}
+                <Grid style={{backgroundColor:'#27203C'}}>
+                    <IntroSection />
+                    <ControlSection /> 
+                    <Accessible/>
+                </Grid>
+                {/* Leads student to school section to add their school */}
                 <Navigate/>
                 {/* <Alert/> */}
             </main>
