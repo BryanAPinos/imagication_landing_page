@@ -5,7 +5,7 @@ import { Typography } from '@mui/material'
 
 export default function ExploreSection() {
     return (
-        <div className="relative flex content-center items-center justify-center h-full">
+        <div className="relative flex content-center items-center justify-center h-full" style={{overflowX:'hidden'}}>
         <section className="pb-20 bg-white-100 -mt-8">
             <div className="container max-w-9xl mx-auto px-2">
                 <div className="flex flex-wrap items-center mt-16">

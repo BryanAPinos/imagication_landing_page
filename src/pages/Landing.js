@@ -25,6 +25,8 @@ const Root = styled('div')(({ theme }) => ({
 
 
 
+
+
 export default function Landing() {
     return (
         <>
@@ -38,11 +40,11 @@ export default function Landing() {
                </Root>
             </Box>
             <main>
-                <ExploreSection />
+                <ExploreSection/>
                 <Testimonial/>
                 {/* Below is the main content */}
                 <Grid style={{backgroundColor:'#27203C'}}>
-                    <IntroSection />
+                    <IntroSection /> 
                     <ControlSection /> 
                     <Accessible/>
                 </Grid>

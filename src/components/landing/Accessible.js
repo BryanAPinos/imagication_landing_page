@@ -3,7 +3,18 @@ import Intro from 'assets/img/introducing.jpg'
 import { Typography, Grid } from '@mui/material'
 import SchoolIcon from '../../assets/img/School Icon.png'
 import AccessibleVid from '../../assets/videos/Accessible.gif'
+import { styled } from '@mui/material/styles';
 
+const Hide = styled('div')(({ theme }) => ({
+
+
+    // Match [md, md + 1)
+    //       [md, lg)
+    //       [900px, 1200px)
+    [theme.breakpoints.between('xs','sm')]:  { 
+      display: 'none'
+    },
+  }));
 
 export default function Accessible() {
     return (
@@ -11,10 +22,13 @@ export default function Accessible() {
         <section className="pb-20 bg-white-100 -mt-30">
             <div className="container max-w-9xl mx-auto px-2">
                 <div className="flex flex-wrap items-center mt-20">
-                    <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0" >
-                    <Image width ='1200' alt ='Craig is meeting up with his friends on Imagication' src={AccessibleVid} style={{border:'7px solid rgba(122, 122, 122, 0.38)', borderRadius: '10px'}}/>
+                    <div className="lg:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0" >
+                        <Hide>
+                        <Image width='1200' alt ='Craig is meeting up with his friends on Imagication' src={AccessibleVid} style={{border:'7px solid rgba(122, 122, 122, 0.38)', borderRadius: '10px'}}/>
+
+                        </Hide>
                     </div>
-                    <div className="md:w-5/12 px-4 mx-auto">
+                    <div className=" w-full lg:w-5/12 px-4 mx-auto">
                     <Grid className='py-8'>
                             <Image alt='school icon'
                             src={SchoolIcon}
@@ -22,7 +36,7 @@ export default function Accessible() {
                             />
 
                         </Grid>
-                        <Grid style={{backgroundColor: '#B8AFD5', width: '20rem'}} className='rounded-xl py-4'
+                        <Grid style={{backgroundColor: '#B8AFD5'}} className='rounded-xl py-4'
                         container
                         justifyContent="center"
 
@@ -40,7 +54,7 @@ export default function Accessible() {
                             <b>No download necessary</b>
                             </Typography>
                         </Grid>
-                        <Typography variant='subtitle1' style={{color: '#EBEBEB', width:'33rem'}} >
+                        <Typography variant='subtitle1' style={{color: '#EBEBEB'}} >
                         Just a laptop and you!                        
                         </Typography>
                     </div>
