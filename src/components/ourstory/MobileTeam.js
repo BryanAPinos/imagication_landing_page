@@ -1,7 +1,6 @@
 import { Typography, Button, Box, Grid, Card, CardContent, CardMedia, Container} from '@mui/material'
 import Diana from  '../../assets/img/1.jpg';
 import Bryan from  '../../assets/img/2.PNG'
-import Nallely from  '../../assets/img/3.jpg'
 
 export default function OurStoryText() {
     const team = [
@@ -14,11 +13,6 @@ export default function OurStoryText() {
             name: 'Bryan Pinos',
             title: 'CTO & Co-Founder',
             img: Bryan,
-        },
-        {
-            name: 'Nallely Inoa',
-            title: 'Graphic Designer',
-            img: Nallely,
         },
     ]
     

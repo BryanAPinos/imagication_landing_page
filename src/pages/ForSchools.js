@@ -6,6 +6,7 @@ import Video from 'components/forschools/Video';
 import { styled } from '@mui/material/styles';
 import MobileNavbar from 'components/navbar/MobileNavbar';
 import SalesForm from 'components/forschools/SalesForm.js';
+import SmallerVideo from 'components/forschools/SmallerVideo';
 
 const Root = styled('div')(({ theme }) => ({
 
@@ -18,34 +19,65 @@ const Root = styled('div')(({ theme }) => ({
     },
   }));
 
+  const MinimizeVideo = styled('div')(({ theme }) => ({
+
+
+    // Match [md, md + 1)
+    //       [md, lg)
+    //       [900px, 1200px)
+    [theme.breakpoints.up('md')]:  { 
+      display: 'none',
+    },
+  }));
+
+  const MaxVideo = styled('div')(({ theme }) => ({
+
+
+    // Match [md, md + 1)
+    //       [md, lg)
+    //       [900px, 1200px)
+    [theme.breakpoints.down('md')]:  { 
+      display: 'none',
+    },
+  }));
+
+
 export default function OurStory() {
     return (
         <>
-            {/* <div className="absolute w-full z-20">
-                <ImagicationNavbar />
-            </div> */}
-            <Box 
-                sx={{ marginBottom: 10}}
-            >
+            <Box sx={{ marginBottom: 10}}>
                <ImagicationNavbar />
                <Root>
-               <MobileNavbar/>
+                    <MobileNavbar/>
                </Root>
             </Box>
             <main>
-            <Grid >
+           
                 <Grid item>
                     <Header />
                 </Grid>
+               
                 <Grid 
                 container 
                 className='bg-gray-100'   
                 direction="column"
                 justifyContent="center"
                 alignItems="center">
-                    <Video/>
+                    <MaxVideo>
+                        <Video/>
+                    </MaxVideo>
+                        
+                    
+                    
+                    <MinimizeVideo>
+                        <SmallerVideo/>
+                    </MinimizeVideo>
+                    
+                    
                 </Grid>
-            </Grid>
+
+
+            <SalesForm/>
 
             </main>
                 <Footer />
