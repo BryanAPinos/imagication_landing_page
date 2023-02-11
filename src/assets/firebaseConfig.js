@@ -1,4 +1,5 @@
-import firebase from "firebase";
+// import firebase from "firebase/app";
+// import "firebase/analytics";
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -13,10 +14,10 @@ var firebaseConfig = {
   measurementId: "G-G425X852DH",
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
 
-export default firebase;
+export default app;
