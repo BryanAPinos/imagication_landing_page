@@ -1,5 +1,8 @@
 import firebase from "firebase";
 
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 var firebaseConfig = {
   apiKey: "AIzaSyBV4tKqTwWobCEqfHtyRjrP3IncoR6oiW4",
   authDomain: "imagication-ca3d7.firebaseapp.com",
@@ -12,5 +15,8 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 export default firebase;
