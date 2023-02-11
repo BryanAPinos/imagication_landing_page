@@ -23,10 +23,6 @@ import { getAnalytics } from "firebase/analytics";
 
 getAnalytics(app);
 
-// import firebase from "./assets/firebaseConfig";
-// firebase.analytics();
-// analytics.logEvent("Page View");
-
 function App() {
   return (
     <ThemeProvider theme={theme}>

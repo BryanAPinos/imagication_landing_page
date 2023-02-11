@@ -5,18 +5,6 @@ import App from "App";
 import reportWebVitals from "reportWebVitals";
 import "typeface-lato";
 
-// import * as firebase from "firebase/app";
-// import { initializeApp } from "firebase/app";
-
-// import { firebaseConfig } from "./assets/firebaseConfig";
-// // import { getAnalytics } from "firebase/analytics";
-
-// // getAnalytics(app);
-// firebase.initializeApp(firebaseConfig);
-// firebase.analytics();
-
-// getAnalytics(app);
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
